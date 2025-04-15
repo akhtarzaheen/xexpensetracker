@@ -1,0 +1,96 @@
+.trackerBox{
+    /* width: 100%; */
+height: 269px;
+/* top: 94px;
+left: 32px; */
+border-radius: 10px;
+background-color: #626262;
+/* display: flex;
+gap: 40px;
+justify-content: center;
+align-items: center; */
+
+}
+
+.bg-custom-grey {
+    background-color: #9B9B9B;
+  }
+
+.expenseWidthStyle{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+align-items: center;
+height: 100%;
+width: 100%;
+}
+
+.balanceBox{
+    width: 30%;
+height: 181px;
+top: 140px;
+left: 90px;
+border-radius: 15px;
+background-color: #9B9B9B;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+.walletBalanceText{
+    height: 34px;
+    top: 192px;
+    left: 113px;
+    font-weight: 400;
+}
+
+.labelAmount{
+    font-size: 30px;
+}
+
+.amount{
+    color:#89E148;
+    font-weight: 600;
+}
+
+.expense{
+    color:#F4BB4A;
+    font-weight: 600;
+}
+
+.addIncomeBtn{
+    width: 30%;
+    height: 20%;
+    border-radius: 15px;
+    background-color: #89E148;
+    cursor: pointer;
+}
+
+.addExpensesBtn{
+    width: 30%;
+    height: 20%;
+    border-radius: 15px;
+    background-image: linear-gradient(to right, #FF9595, #FF3838);
+    cursor: pointer;
+}
+
+.transactionsBox{
+    display: flex;
+    gap: 40px;
+}
+
+.transactionTable{
+    width: 738.3px;
+height: 345px;
+border-radius: 15px;
+background-color: #FFFFFF;
+}
+
+.expenseTable{
+    width: 500px;
+height: 345px;
+border-radius: 15px;
+background-color: #FFFFFF;
+}

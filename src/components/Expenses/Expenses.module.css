@@ -1,0 +1,13 @@
+.expenseTable{
+    /* width: 500px; */
+height: 100%;
+border-radius: 15px;
+background-color: #FFFFFF;
+}
+
+.textHeader{
+    font-weight: 700;
+    text-align: start;
+    font-size: 28px;
+    margin: unset;
+}
