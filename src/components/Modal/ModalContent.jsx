@@ -215,7 +215,7 @@ export default function ModalContent({ onClose, isIncome, isExpense,setIsUpdateB
               type="button"
               className={style.btn_add}
               onClick={expenseToEdit ? onEditExpense : onSubmitExpense}
-            >{expenseToEdit ? "Edit Expense":"Add Expense"}</button>
+            >Add Expense</button>
             <button className={style.btn_cancel} onClick={onClose}>
               Cancel
             </button>
