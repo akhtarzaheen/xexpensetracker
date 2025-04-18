@@ -212,7 +212,7 @@ export default function ModalContent({ onClose, isIncome, isExpense,setIsUpdateB
           </div>
           <div className={style.modal_actions}>
             <button
-              type="button"
+              type="submit"
               className={style.btn_add}
               onClick={expenseToEdit ? onEditExpense : onSubmitExpense}
             >Add Expense</button>
