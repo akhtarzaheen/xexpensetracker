@@ -7,6 +7,7 @@ import styles from './ExpenseTracker.module.css'
 import ReactModal from 'react-modal';
 import ModalContent from '../Modal/ModalContent';
 import { useSnackbar } from 'notistack';
+import { ExpenseCard } from '../Card/ExpenseCard';
 export default function ExpenseTracker() {
     let [balance,setBalance] = useState(parseInt(localStorage.getItem("balance")) >0 ? parseInt(localStorage.getItem("balance")) : 5000);
     const { enqueueSnackbar } = useSnackbar()
@@ -139,9 +140,12 @@ export default function ExpenseTracker() {
             <div 
             className={styles.expenseWidthStyle}
             >
-                <Card label="Wallet Balance" amount={balance ? balance : 5000} btnLabel="+ Add Income" isIncome={true} isExpense={false} setIsUpdateBalance={setIsUpdateBalance} setIsClosed={setIsClosed}/>
+                <Card label="Wallet Balance" amount={balance ? balance : 5000} isIncome={true} isExpense={false} setIsUpdateBalance={setIsUpdateBalance} setIsClosed={setIsClosed}/>
                 
-                <Card label="Expenses" amount={totalExpenses ? totalExpenses : 0} btnLabel="+ Add Expense" isExpense={true} isIncome={false} setIsUpdateExpense={setIsUpdateExpense} setIsClosed={setIsClosed}/>
+                
+                {/* <Card label="Expenses" amount={totalExpenses ? totalExpenses : 0} btnLabel="+ Add Expense" isExpense={true} isIncome={false} setIsUpdateExpense={setIsUpdateExpense} setIsClosed={setIsClosed}/> */}
+                <ExpenseCard label="Expenses" amount={totalExpenses ? totalExpenses : 0} isExpense={true} isIncome={false} setIsUpdateExpense={setIsUpdateExpense} setIsClosed={setIsClosed}/>
+                
                 <div>
                     <Chart isUpdateExpense={isUpdateExpense}/>
                    

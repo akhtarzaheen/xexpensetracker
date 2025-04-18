@@ -3,7 +3,7 @@ import ModalContent from "../Modal/ModalContent";
 import styles from "./Card.module.css";
 import ReactModal from "react-modal";
 
-export const Card = ({ label, amount, btnLabel, isIncome, isExpense,setIsUpdateBalance,setIsUpdateExpense,setIsClosed }) => {
+export const ExpenseCard = ({ label, amount, btnLabel, isIncome, isExpense,setIsUpdateBalance,setIsUpdateExpense,setIsClosed }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const onClose = () => {
@@ -21,8 +21,8 @@ export const Card = ({ label, amount, btnLabel, isIncome, isExpense,setIsUpdateB
       </span>
       <input
         type="button"
-        className={isIncome ? styles.addIncomeBtn : styles.addExpensesBtn}
-        value={"+ Add Income"}
+        className={styles.addExpensesBtn}
+        value={"+ Add Expense"}
         onClick={() => setIsOpen(true)}
       />
       <ReactModal
