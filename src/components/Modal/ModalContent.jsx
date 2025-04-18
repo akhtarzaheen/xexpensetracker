@@ -211,12 +211,11 @@ export default function ModalContent({ onClose, isIncome, isExpense,setIsUpdateB
             />
           </div>
           <div className={style.modal_actions}>
-            <input
+            <button
               type="button"
-              value={expenseToEdit ? "Edit Expense":"Add Expense"}
               className={style.btn_add}
               onClick={expenseToEdit ? onEditExpense : onSubmitExpense}
-            />
+            >{expenseToEdit ? "Edit Expense":"Add Expense"}</button>
             <button className={style.btn_cancel} onClick={onClose}>
               Cancel
             </button>
@@ -234,12 +233,11 @@ export default function ModalContent({ onClose, isIncome, isExpense,setIsUpdateB
               value={balance}
               onChange={onBalanceChange}
             />
-            <input
+            <button
               type="submit"
               className={style.btn_add_balance}
-              value="Add Balance"
               onClick={onSubmitBalance}
-            />
+            >Add Balance</button>
             <button className={style.btn_cancel} onClick={onClose}>
               Cancel
             </button>
