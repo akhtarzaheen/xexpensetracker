@@ -19,12 +19,11 @@ export const Card = ({ label, amount, btnLabel, isIncome, isExpense,setIsUpdateB
           &#8377;{amount}
         </span>
       </span>
-      <input
+      <button
         type="button"
-        className={isIncome ? styles.addIncomeBtn : styles.addExpensesBtn}
-        value={"+ Add Income"}
+        className={styles.addIncomeBtn}
         onClick={() => setIsOpen(true)}
-      />
+      >+ Add Income</button>
       <ReactModal
         isOpen={isOpen}
         onRequestClose={onClose}
